@@ -67,6 +67,16 @@ export function MovieProvider({ children }) {
     setHeader("Trending Movies")
   }
 
+  const fetchSeries = async () => {
+    const data = await fetch(
+      `https://api.themoviedb.org/3/tv/top_rated?api_key=${APIKEY}&language=en-US&page=${page}`
+    );
+    const trend = await data.json();
+    setTrending(trend.results);
+    setLoader(false)
+    setHeader("Trending Series")
+  }
+
   const fetchUpcoming = async () => {
     const data = await fetch(
       `https://api.themoviedb.org/3/movie/upcoming?api_key=${APIKEY}&language=en-US&page=${page}`
@@ -124,7 +134,7 @@ export function MovieProvider({ children }) {
         fetchUpcoming,
         upcoming,
         GetFavorite,
-      
+        fetchSeries,
         GoogleLogin,
         user
       }}
