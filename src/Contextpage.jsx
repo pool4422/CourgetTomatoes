@@ -74,7 +74,17 @@ export function MovieProvider({ children }) {
     const trend = await data.json();
     setTrending(trend.results);
     setLoader(false)
-    setHeader("Trending Series")
+    setHeader("Top Rated Series")
+  }
+
+  const fetchSeriesP = async () => {
+    const data = await fetch(
+      `https://api.themoviedb.org/3/tv/popular?api_key=${APIKEY}&language=en-US&page=${page}`
+    );
+    const trend = await data.json();
+    setTrending(trend.results);
+    setLoader(false)
+    setHeader("Popular Series")
   }
 
   const fetchUpcoming = async () => {
@@ -90,7 +100,7 @@ export function MovieProvider({ children }) {
   // creat local storage
   const GetFavorite = () => {
     setLoader(false)
-    setHeader("Favorite Movies")
+    setHeader("Favorites")
   }
       
 
@@ -135,6 +145,7 @@ export function MovieProvider({ children }) {
         upcoming,
         GetFavorite,
         fetchSeries,
+        fetchSeriesP,
         GoogleLogin,
         user
       }}

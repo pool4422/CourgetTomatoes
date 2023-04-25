@@ -37,15 +37,18 @@ function Navbar() {
 
                 <ul className="text-white font-semibold text-[16px] text-center px-5">
 
-                    <Link to="/"><li className={`${header == "Genres" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600`} onClick={() => setActivemobile(!activemobile)}>Genres</li></Link>
+                    <Link to="/"><li className={`${header == "Genres" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600`} onClick={() => setActivemobile(!activemobile)}>Search</li></Link>
 
-                    <Link to="/trending"><li className={`${header == "Trending Movies" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Trending</li></Link>
+                    <Link to="/trending"><li className={`${header == "Trending Movies" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Trending Movies</li></Link>
 
-                    <Link to="/upcoming"><li className={`${header == "Upcoming Movies" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Upcoming</li></Link>
+                    <Link to="/upcoming"><li className={`${header == "Upcoming Movies" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Upcoming Movies</li></Link>
+                
+                    <Link to="/series"><li className={`${header == "Top Rated Series" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Top rated Series</li></Link>
+
+                    <Link to="/seriesP"><li className={`${header == "Popular Series" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Popular Series</li></Link>
 
                     <Link to="/favorite"><li className={`${header == "Favorite Movies" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Favorites</li></Link>
-                
-                    <Link to="/series"><li className={`${header == "Series" ? 'bg-blue-500/20 border-blue-600' : 'bg-gray-500/20 border-black'} p-2 my-2  hover:bg-blue-500/20 rounded-[5px] border-2 hover:border-blue-600 `} onClick={() => setActivemobile(!activemobile)}>Series</li></Link>
+
 
                 </ul>
 

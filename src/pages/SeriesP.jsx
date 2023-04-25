@@ -6,19 +6,19 @@ import Header from '../components/Header';
 import { Pagebtn } from '../components/Pagebtn';
 import { Helmet } from 'react-helmet';
 
-function Series() {
+function SeriesP() {
 
-  const { loader, page, fetchSeries, trending } = useContext(Contextpage);
+  const { loader, page, fetchSeriesP, trending } = useContext(Contextpage);
     
     useEffect(() => {
-        fetchSeries();
+        fetchSeriesP();
     }, [page])
 
 
   return (
       <>
           <Helmet>
-          <title>CourgetTomatoes | Series</title>
+          <title>CourgetTomatoes | Popular Series</title>
         </Helmet>
           
         <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
@@ -44,4 +44,4 @@ function Series() {
   )
 }
 
-export default Series
+export default SeriesP
