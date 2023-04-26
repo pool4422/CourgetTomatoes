@@ -1,76 +1,44 @@
-# BlueBird-Movies
-CourgetTomatoes is a React-based movie website that allows users to search for movies by title, sort them by genre, view trending and upcoming movies, and bookmark their favorite movies. The website is designed to be user-friendly and visually appealing.
+# CourgetTomatoes
+CourgetTomato is a website created with React that allows users to explore, find and save their favorite movies and series. The site offers movie search by title, genre, popularity and other criteria.
 
-![background](https://user-images.githubusercontent.com/87109400/231843668-00e0d9aa-8447-4148-8a3a-0b68135c0795.png)
+#  Features 
 
-# 🍿 Features 
+- Movie search: Locate films by title.
+- Genre filtering: Sort movies according to genre.
+- Trending Movies: Discover a curated list of popular films.
+- Top rating Series: Browse the highest-rated series.
+- Popular Series: Check out the most sought-after series.
+- Upcoming movies: Uncover an array of forthcoming films.
+- Movie Details: Obtain detailed information for each movie.
+- Bookmark Movies: Preserve favorite movies for easy access later.
+- Google Authentication: Log in securely with a Google account.
 
-- Search movies: users can search for movies by title
-- Genre-wise display: movies can be sorted by genre
-- Trending Movies: displays a section for trending movies
-- Upcoming movies: displays a section for upcoming movies
-- Movie Details: users can view detailed information about each movie
-- Bookmark Movies: users can bookmark their favorite movies for later viewing
-- Google Authentication: users can sign in using their Google account
+#  Technology
 
-# 🍿 Technology
+- ReactJS: Frontend framework used to develop the user interface.
+- TMDB API: Supplies data and images for movies and series.
+- Firebase Google Authentication: Ensures secure user authentication.
 
-BlueBird-Movies is built using the following technologies:
+## Step 2: Obtain the TMDB Movies/Series API Key and Firebase Configuration
 
-- ReactJS
-- TMDB API
-- Firebase Google Authentication
-- Framer Motion
+Before starting the website, you will need to obtain the TMDB Movies/Series API key and Firebase configuration. Follow these steps to obtain them and add them to your `.env` file.
 
-# 🍿 How to Run the Website on Your System
-
-## Step 1: Download and Extract the Code
-
-Firstly, download the entire website code and extract the ZIP file to a folder on your local system.
-
-## Step 2: Obtain the TMDB Movies API Key and Firebase Configuration
-
-Before starting the website, you will need to obtain the TMDB Movies API key and Firebase configuration. Follow these steps to obtain them and add them to your `.env` file.
-
-### ▶️ Get TMDB API Key 
+###  Get TMDB API Key 
 
 - Go to https://www.themoviedb.org/ and log in.
 - Click on your user profile picture in the navigation bar, and select "Settings".
 - In the settings, select "API" and generate an API key.
 
-### ▶️ Firebase Setup 
+###  Firebase Setup 
 
-Note that Firebase is only required for Google authentication. If you are not using Google authentication in your application, you can skip this step.
+- First, head over to the Firebase console and create a new application.
+- Next, create a web application by selecting "Add App" and following the instructions given.
+- Then, grab the configuration information from the code snippet and paste it into your .env file.
+- To enable Google authentication within Firebase, go to the Build section and select Authentication. Then, activate Google authentication.
+- If you want to use Google authentication in localhost, you'll need to add your localhost/ as an authorized domain in Build > Authentication > Settings > Authorized Domains. Don't forget to include localhost/ in this section.
 
-- Go to the Firebase Console and create a new app.
-- After creating the app, build a web app by clicking "Add App" and following the instructions.
+## Step 3: Run to the Website
 
-![Firebase Add App Screenshot](https://user-images.githubusercontent.com/87109400/231569204-445d8007-fe75-4012-a21b-a71f4f4bc697.png)
-
-![Firebase Build App Screenshot](https://user-images.githubusercontent.com/87109400/231568774-1ea09ada-34b8-4035-80d4-90ac79c1c8ed.png)
-
-- Copy the configuration information provided in the green line, and paste it into the `.env` file:
-
-![image](https://user-images.githubusercontent.com/87109400/231570250-9256c1bc-6669-423a-8b95-06d9577485a0.png)
-
-- Next, to activate Google authentication in Firebase, go to **Build > Authentication** and enable Google authentication.
-- To use Google authentication in localhost, add your localhost/127.0.0.1 as an Authorized Domain at **Build > Authentication > Settings > Authorized Domains** and add localhost or 127.0.0.1 to this section.
-
-![image](https://user-images.githubusercontent.com/87109400/231575419-ca703ebd-5380-45b6-8afe-33b9c1af778e.png)
-
-## Step 3: Run the Website
-
-Open your code editor (such as VS Code) and navigate to the project directory. Then, open a terminal and run the following command:
-
-```bash
-npm start
-```
-This will start the application. Open a web browser and navigate to http://localhost:3000 to access the website.
-
-Note: Ensure that you have carefully added the TMDB API key and Firebase authentication configuration to your .env file. If the .env file is not working, add all the API keys and configuration manually.
-
-# 🍿 Demo 
-
-- Check out our live demo at https://bluebirdmovies.netlify.app/ 
- 
-- Youtube video : https://www.youtube.com/watch?v=mGqOOtEGmJc.
+- To launch the site you need npm i then npm run dev 
+- The link of the localhost will be given and to open on the browser 
+- Then, you will be able to navigate on the website 
