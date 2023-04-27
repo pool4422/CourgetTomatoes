@@ -42,3 +42,7 @@ Before starting the website, you will need to obtain the TMDB Movies/Series API 
 - To launch the site you need npm i then npm run dev 
 - The link of the localhost will be given and to open on the browser 
 - Then, you will be able to navigate on the website 
+
+#### About the deployment of the site
+
+Unfortunately we did not succeed in deploying the site
